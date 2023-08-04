@@ -15,11 +15,12 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
 	'nvim-lua/plenary.nvim',
 	'nvim-treesitter/nvim-treesitter',
-	'nvim-telescope/telescope.nvim', tag = '0.1.1',
+	{"nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate"},
 	'ThePrimeagen/harpoon',
 	'jiaoshijie/undotree',
 	'tpope/vim-fugitive',
 	'sainnhe/everforest',
+	'nvim-telescope/telescope.nvim',
 
 	'VonHeikemen/lsp-zero.nvim',
 	branch = 'v1.x',
