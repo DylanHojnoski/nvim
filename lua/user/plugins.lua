@@ -19,9 +19,11 @@ local plugins = {
 	'ThePrimeagen/harpoon',
 	'jiaoshijie/undotree',
 	'tpope/vim-fugitive',
-	'sainnhe/everforest',
 	'nvim-telescope/telescope.nvim',
 
+    -- colorschemes
+	'sainnhe/everforest',
+    'ellisonleao/gruvbox.nvim',
 	'VonHeikemen/lsp-zero.nvim',
 	branch = 'v1.x',
 		-- LSP Support
@@ -42,11 +44,9 @@ local plugins = {
 	{'L3MON4D3/LuaSnip'},             -- Required
 	{'rafamadriz/friendly-snippets'}, -- Optional
 
-    -- Debug
-    'mfussenegger/nvim-dap',
-
     'ahmedkhalf/project.nvim',
     'nvim-lualine/lualine.nvim',
+    -- "epwalsh/obsidian.nvim",
 }
 
 local opts = {}

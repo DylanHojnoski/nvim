@@ -26,7 +26,10 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.cmdheight = 0
+vim.opt.cmdheight = 1
 
 vim.g.mapleader = " "
+
+vim.opt.guicursor = "i:block"
+
 
