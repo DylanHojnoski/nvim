@@ -32,4 +32,4 @@ vim.g.mapleader = " "
 
 vim.opt.guicursor = "i:block"
 
-
+vim.opt.completeopt = 'menu,menuone,noselect,noinsert,popup'
