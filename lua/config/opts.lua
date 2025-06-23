@@ -1,3 +1,5 @@
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.cmd("colorscheme everforest")
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -25,6 +27,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
+vim.opt.wrap = false
 
 vim.opt.cmdheight = 1
 
