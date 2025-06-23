@@ -1,5 +1,6 @@
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.cmd("colorscheme everforest")
+vim.diagnostic.config({ virtual_text = true })
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
