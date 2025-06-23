@@ -21,14 +21,14 @@ lsp.on_attach(function (slient, bufnr)
 	vim.keymap.set("n", "<leader>vrn", function () vim.lsp.buf.rename() end, opts)
 end)
 
--- vim.api.nvim_create_autocmd('LspAttach', {
---   callback = function(ev)
---     local client = vim.lsp.get_client_by_id(ev.data.client_id)
---     if client:supports_method('textDocument/completion') then
---       vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
---     end
---   end,
--- })
+ -- vim.api.nvim_create_autocmd('LspAttach', {
+ --   callback = function(ev)
+ --     local client = vim.lsp.get_client_by_id(ev.data.client_id)
+ --     if client:supports_method('textDocument/completion') then
+ --       vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
+ --     end
+ --   end,
+ -- })
 
 -- Map Tab for smart navigation and indentation
 -- vim.api.nvim_set_keymap('i', '<Tab>',
@@ -43,16 +43,16 @@ end)
 -- )
 
 -- Map Enter to confirm completion or insert a newline
-vim.keymap.set('i', '<CR>', function()
-  if vim.fn.pumvisible() == 1 then
+--vim.keymap.set('i', '<CR>', function()
+  --if vim.fn.pumvisible() == 1 then
     -- CASE 1: Autocomplete window IS open
     -- Confirm the selected item (equivalent to pressing <C-y>)
-    return vim.api.nvim_replace_termcodes('<C-y>', true, false, true)
-  else
+    --return vim.api.nvim_replace_termcodes('<C-y>', true, false, true)
+  --else
     -- CASE 2: Autocomplete window IS NOT open
     -- Insert a normal newline (equivalent to pressing Enter normally)
-    return vim.api.nvim_replace_termcodes('<CR>', true, false, true)
-  end
-end, { expr = true, silent = true, noremap = true, desc = 'Confirm completion / New line' })
+    --return vim.api.nvim_replace_termcodes('<CR>', true, false, true)
+  --end
+--end, { expr = true, silent = true, noremap = true, desc = 'Confirm completion / New line' })
 
 vim.diagnostic.config({ virtual_text = true })

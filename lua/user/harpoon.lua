@@ -23,3 +23,5 @@ vim.keymap.set("n", "<leader>p", function() harpoon:list():select(4) end)
 -- Toggle previous & next b ffers stoked within Harpoon list
 vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
+
+
