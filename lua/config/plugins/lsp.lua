@@ -13,6 +13,7 @@ return {
             },
         },
         config = function()
+            vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
         end,
     }
 }
