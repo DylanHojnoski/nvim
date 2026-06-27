@@ -25,6 +25,8 @@ require('blink.cmp').setup({
         keymap = {
             preset = 'default',
             ['<CR>'] = {'accept', 'fallback'},
+            ['<S-TAB>'] = { 'select_prev', 'fallback' },
+            ['<TAB>'] = { 'select_next', 'fallback' },
         },
 
         -- (Default) Only show the documentation popup when manually triggered
