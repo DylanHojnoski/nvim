@@ -1,5 +1,3 @@
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.cmd("colorscheme everforest")
 vim.diagnostic.config({ virtual_text = true })
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -33,6 +31,7 @@ vim.opt.wrap = false
 vim.opt.cmdheight = 1
 
 vim.g.mapleader = " "
+vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, {})
 
 vim.opt.guicursor = "i:block"
 
