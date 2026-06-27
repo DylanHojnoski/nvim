@@ -47,10 +47,6 @@
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
-    "project.nvim": {
-      "rev": "8c6bad7d22eef1b71144b401c9f74ed01526a4fb",
-      "src": "https://github.com/ahmedkhalf/project.nvim"
-    },
     "roslyn.nvim": {
       "rev": "c4ef25973bcc30a2c8c8766711fbbdb3d02b70a3",
       "src": "https://github.com/seblyng/roslyn.nvim"
